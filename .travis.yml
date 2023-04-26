@@ -1,0 +1,10 @@
+sudo: required
+language: node_js
+node_js:
+  - '14'
+script:
+  - cd 123
+after_success:
+  - echo after_success
+after_deploy:
+  - echo after_deploy
