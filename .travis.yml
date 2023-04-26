@@ -2,6 +2,9 @@ sudo: required
 language: node_js
 node_js:
   - '14'
+install:
+  - echo install
+  - cd 123
 before_script:
   - echo before_script
 script:
@@ -9,7 +12,9 @@ script:
   - cd 123
 after_success:
   - echo after_success
+  - echo $TRAVIS_TEST_RESULT
 after_failure:
   - echo after_failure
+  - echo $TRAVIS_TEST_RESULT
 after_script:
   - echo after_script
