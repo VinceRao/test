@@ -4,7 +4,6 @@ node_js:
   - '14'
 install:
   - echo install
-  - cd 123
 before_script:
   - echo before_script
 script:
