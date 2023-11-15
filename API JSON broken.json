@@ -1,0 +1,30 @@
+{
+  "info": {
+    "version": "2.0",
+    "description": "This will be replaced in test creation of the API",
+    "title": "Example akv apirrr"
+  },
+  "paths": {
+    "/InsertData": {
+      "post": {
+        "parameters": []
+      },
+      "patch": {}
+    },
+    "/getData": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": { "wd:Section_Listing_Data": {} }
+            }
+          }
+        },
+        "produces": ["application/json"]
+      }
+    }
+  },
+  "swagger": "2.0"
+}
